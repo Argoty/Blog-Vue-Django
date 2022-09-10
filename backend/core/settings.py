@@ -7,7 +7,7 @@ env = environ.Env()
 environ.Env.read_env()
 
 
-SECRET_KEY = env('SECRET-KEY')
+SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
-    'rest-framework',
-    'rest-framework-authtoken',
+    'blog',
+    'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders'
 ]
 
