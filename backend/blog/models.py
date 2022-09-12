@@ -3,7 +3,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 def user_directory_path(instance, filename):
-    return 'blog/{0}/{1}'.format(instance.title, filename)
+    return 'blog/{0}'.format(filename)
 
 
 class Post(models.Model):
